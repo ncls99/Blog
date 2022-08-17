@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --color-primary: #247Ba0;
+    --color-inputs: rgba(16,150,184, 0.2);
+    --zindex-navbar: 5000;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+input, textarea {
+    border: none;
+    padding: 1rem;
+    outline: none;
+    background-color: var(--color-inputs);
+    border-radius: 1rem;
+}
+
+.navbar{
+    background-color: rgba(1, 26, 37, 90%);
+    position: fixed;
+    width: 100%;
+    padding: 1em;
+    z-index: var(--zindex-navbar);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .menu .li a {
+    color:white;
+    transition: opacity 0.5s;
+}
+
+.navbar .menu .li a:hover{
+    opacity: 0.6;
+}
+
+.home .content_bg-home {
+    background-color: var(--color-primary);
+    height: 50vh;
+}
+
+.home .box_img-home {
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    top: -150px;
+    left: 1rem;
+    border: 5px solid black;
+}
+
+.box_img-home img {
+    width: 100%;
+}
+
+.box_info-home .title-home {
+    font-size: 3rem ;
+}
+
+.box_info-home .title-home span {
+    color: var(--color-primary);
+}
+
+.container_principal {
+    max-width: 1000px;
+    margin: auto;
+}
+.box_info-home {
+    position: relative;
+    text-align: center;
+    top: -100px;
+}
+
+.about {
+    font-size: 1.5rem;
+    padding: 1em;
+    text-align: justify;
+}
+
+.about p {
+    margin: 1rem 0;
+}
+
+.skills {
+    text-align: center;
+}
+
+.contact{
+    padding: 1rem;
+    max-width: 600px; 
+    margin: auto;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+} 
+
+.contact form .content_inputs {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+}
+
+.contact form .content_inputs .box-input {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form .box-textarea {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form .submit {
+    width: 100%;
+    background-color: var(--color-primary);
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--color-primary);
+    color: white;
+}
